@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>สั่งซื้อสินค้า — Body Scent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+Thai:wght@300;400;500&family=Noto+Serif+Thai:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand-logo">
+        <span>Body Scent</span>
+        <span class="brand-logo__sub">Body Mist & Roll-on</span>
+      </a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav-links">
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="product.html">สินค้าทั้งหมด</a></li>
+          <li><a href="index.html#moods">4 Mood</a></li>
+          <li><a href="order.html" class="active">สั่งซื้อ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container" style="max-width: 720px;">
+      <div class="section-header">
+        <span class="eyebrow">Order Form</span>
+        <h1>สั่งซื้อสินค้า</h1>
+        <div class="divider-gold"></div>
+        <p class="lead-text">
+          กรอกข้อมูลติดต่อและรายละเอียดคำสั่งซื้อของคุณด้านล่าง ทีมงาน Body Scent จะติดต่อกลับเพื่อยืนยันการจัดส่งโดยเร็วที่สุด
+        </p>
+      </div>
+
+      <form id="orderForm" class="card" novalidate>
+        <div class="form-group">
+          <label for="customerName" class="form-label">ชื่อลูกค้า</label>
+          <input
+            type="text"
+            id="customerName"
+            name="customerName"
+            class="form-control"
+            placeholder="กรอกชื่อ-นามสกุล"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="contact" class="form-label">เบอร์โทร/Line</label>
+          <input
+            type="text"
+            id="contact"
+            name="contact"
+            class="form-control"
+            placeholder="กรอกเบอร์โทรศัพท์ หรือ Line ID"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="items" class="form-label">รายการสินค้า</label>
+          <input
+            type="text"
+            id="items"
+            name="items"
+            class="form-control"
+            placeholder="ระบุชื่อสินค้าที่ต้องการสั่งซื้อ"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="total" class="form-label">จำนวนเงินรวม</label>
+          <input
+            type="text"
+            id="total"
+            name="total"
+            class="form-control"
+            placeholder="ยอดรวม (บาท)"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="note" class="form-label">หมายเหตุ</label>
+          <textarea
+            id="note"
+            name="note"
+            rows="3"
+            class="form-control"
+            placeholder="ที่อยู่จัดส่ง หรือข้อความเพิ่มเติมถึงร้าน (ถ้ามี)"
+          ></textarea>
+        </div>
+
+        <div style="margin-top: 0.5rem;">
+          <button type="submit" class="btn btn--primary">ยืนยันสั่งซื้อ</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="brand-logo">
+        <span>Body Scent</span>
+        <span class="brand-logo__sub">Everyday Fragrance</span>
+      </div>
+      <div class="site-footer__bottom">
+        <span>© Body Scent. All rights reserved.</span>
+        <span>Body Mist 30ml / 100ml & Roll-on</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
