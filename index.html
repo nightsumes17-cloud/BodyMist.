@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Body Scent — กลิ่นหอมที่สะท้อนตัวตนและจังหวะชีวิตของคุณ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+Thai:wght@300;400;500&family=Noto+Serif+Thai:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand-logo">
+        <span>Body Scent</span>
+        <span class="brand-logo__sub">Body Mist & Roll-on</span>
+      </a>
+      <nav aria-label="เมนูหลัก">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">หน้าแรก</a></li>
+          <li><a href="product.html">สินค้าทั้งหมด</a></li>
+          <li><a href="#moods">4 Mood</a></li>
+          <li><a href="order.html">สั่งซื้อ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section
+      class="section"
+      style="min-height: calc(100vh - 76px); display: flex; align-items: center;"
+    >
+      <div class="container">
+        <div style="max-width: 820px;">
+          <span class="eyebrow">Body Scent Fragrance Collection</span>
+          <h1>Body Scent — แต่งแต้มกลิ่นหอมที่สะท้อนตัวตนและจังหวะชีวิตของคุณได้ทุกวัน ตั้งแต่ความสดชื่นเบาสบายไปจนถึงเสน่ห์ที่ชวนจดจำ</h1>
+          <div class="divider-gold"></div>
+          <p class="lead-text" style="max-width: 600px; margin-bottom: 2.25rem;">
+            น้ำหอมฉีดตัว (Body Mist) ขนาดทดลอง 30ml และขนาดใช้งานปกติ 100ml พร้อมโรลออนที่ออกแบบกลิ่นให้เข้ากับแต่ละช่วงเวลาของวันอย่างละเมียดละไม
+          </p>
+          <a href="product.html" class="btn">ดูสินค้าทั้งหมด</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 Moods Section -->
+    <section id="moods" class="section section--warm">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Scent Moods</span>
+          <h2>เลือกกลิ่นที่ใช่สำหรับอารมณ์ของคุณ</h2>
+          <div class="divider-gold"></div>
+          <p class="lead-text">
+            4 โทนกลิ่นที่คัดสรรมาเพื่อให้เข้ากับจังหวะชีวิตและบรรยากาศที่แตกต่างกัน กดเลือกเพื่อดูสินค้าในโทนกลิ่นนั้น
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <!-- Fresh -->
+          <a href="product.html?mood=fresh" class="card" data-mood="fresh">
+            <div class="product-card__meta">
+              <span class="mood-tag">
+                <span class="mood-dot mood-dot--fresh"></span>
+                Mood 01
+              </span>
+              <span>30ml / 100ml / Roll-on</span>
+            </div>
+            <h3><span class="mood-underline mood-underline--fresh">สดชื่น (Fresh)</span></h3>
+            <p style="margin-top: 1rem;">
+              กลิ่นโปร่ง สะอาด เบาสบาย ที่ช่วยปลุกความตื่นตัวให้รู้สึกพร้อมรับวันใหม่อย่างผ่อนคลาย เหมาะกับวันที่อยากได้ความรู้สึกโล่งสบายไม่หนักตัว
+            </p>
+          </a>
+
+          <!-- Sweet -->
+          <a href="product.html?mood=sweet" class="card" data-mood="sweet">
+            <div class="product-card__meta">
+              <span class="mood-tag">
+                <span class="mood-dot mood-dot--sweet"></span>
+                Mood 02
+              </span>
+              <span>30ml / 100ml / Roll-on</span>
+            </div>
+            <h3><span class="mood-underline mood-underline--sweet">หวานละมุน (Sweet)</span></h3>
+            <p style="margin-top: 1rem;">
+              ความหวานแผ่วเบาที่ให้ความรู้สึกอ่อนโยน น่ารัก และอบอุ่นแบบสบายใจ เหมือนอยู่ใกล้คนคุ้นเคยที่ทำให้ยิ้มได้ง่ายๆ
+            </p>
+          </a>
+
+          <!-- Confident -->
+          <a href="product.html?mood=confident" class="card" data-mood="confident">
+            <div class="product-card__meta">
+              <span class="mood-tag">
+                <span class="mood-dot mood-dot--confident"></span>
+                Mood 03
+              </span>
+              <span>30ml / 100ml</span>
+            </div>
+            <h3><span class="mood-underline mood-underline--confident">มั่นใจ (Confident)</span></h3>
+            <p style="margin-top: 1rem;">
+              กลิ่นโทนนิ่ง สะอาด ดูดี และมีความน่าเชื่อถือ ช่วยเสริมภาพลักษณ์ให้ดูสงบพร้อมเจอผู้คนหรือวันสำคัญที่ต้องใช้ความมั่นใจ
+            </p>
+          </a>
+
+          <!-- Romance -->
+          <a href="product.html?mood=romance" class="card" data-mood="romance">
+            <div class="product-card__meta">
+              <span class="mood-tag">
+                <span class="mood-dot mood-dot--romance"></span>
+                Mood 04
+              </span>
+              <span>30ml / 100ml</span>
+            </div>
+            <h3><span class="mood-underline mood-underline--romance">โรแมนติก (Romance)</span></h3>
+            <p style="margin-top: 1rem;">
+              กลิ่นหวานที่มีมิติและเสน่ห์ลึกขึ้น ให้ความรู้สึกอบอุ่น น่าหลงใหล และทิ้งความประทับใจให้คนรอบข้างได้จดจำ
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="brand-logo">
+        <span>Body Scent</span>
+        <span class="brand-logo__sub">Everyday Fragrance</span>
+      </div>
+      <div class="site-footer__bottom">
+        <span>© Body Scent. All rights reserved.</span>
+        <span>Body Mist 30ml / 100ml & Roll-on</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
